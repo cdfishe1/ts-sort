@@ -1,8 +1,10 @@
-interface Sortable {
-    length: number;
-    compare(leftIndex: number, rightIndex: number): boolean;
-    swap(leftIndex: number, rightIndex: number): void;
-}
+//The abstract class works better here because the Sorter works more tightly with the sorting collections
+
+// interface Sortable {
+//     length: number;
+//     compare(leftIndex: number, rightIndex: number): boolean;
+//     swap(leftIndex: number, rightIndex: number): void;
+// }
 
 export abstract class Sorter {
     abstract compare(leftIndex: number, rightIndex: number): boolean;

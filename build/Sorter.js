@@ -1,6 +1,12 @@
 "use strict";
+//The abstract class works better here because the Sorter works more tightly with the sorting collections
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+// interface Sortable {
+//     length: number;
+//     compare(leftIndex: number, rightIndex: number): boolean;
+//     swap(leftIndex: number, rightIndex: number): void;
+// }
 class Sorter {
     sort() {
         const { length } = this;
